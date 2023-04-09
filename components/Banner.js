@@ -20,8 +20,8 @@ function Banner() {
     <div>
       <div className="relative overflow-hidden bg-[#EEEEEE]">
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
-          <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
-            <div className="sm:max-w-lg xl:-ml-8">
+          <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-16">
+            <div className="sm:max-w-lg lg:ml-8 xl:-ml-8">
               <h1 className="  capitalize md:normal-case text-4xl  font-semibold tracking-tight text-black sm:text-6xl">
                 Feeding the future with quality rotten rice grains
               </h1>

@@ -5,7 +5,9 @@ import {
   TruckIcon,
   UserIcon,
 } from "@heroicons/react/24/outline";
+import { useRouter } from "next/router";
 function Header() {
+  const router = useRouter()
   return (
     <div>
       <nav className="bg-white text-black">
@@ -29,8 +31,8 @@ function Header() {
               <div className="hidden  sm:block">
                 <div className="flex space-x-4">
                   <a
-                    href="#"
-                    class="bg-[#3A98B9] text-white rounded-md px-3 py-2 text-sm font-medium"
+                    href="#products"
+                    className="bg-[#3A98B9] text-white rounded-md px-3 py-2 text-sm font-medium"
                     aria-current="page"
                   >
                     Products
@@ -56,27 +58,27 @@ function Header() {
         </div>
 
         <div className=" sm:hidden    w-full  fixed left-0 bottom-0">
-          <div className="flex bg-white h-16  rounded-t-md  text-black px-20  justify-evenly cursor-pointer  flex-row items-center ">
+          <div className="flex bg-[#3A98B9] h-16  rounded-t-md  text-black px-20  justify-evenly cursor-pointer  flex-row items-center ">
             <ul className=" whitespace-nowrap list-none text-sm flex justify-between space-x-4 py-2 px-4 sm:px-8 sm:space-x-8 ">
-              <div className="navbar">
+              <div onClick={() => router.push("/")} className=" navbar text-white/80 ">
                 <HomeIcon className="navBtn  h-5 w-5 " />
 
-                <li> Home</li>
+                <a> Home</a>
               </div>
 
-              <div className="navbar">
+              <div onClick={() => router.push("#about")} className=" navbar text-white/80  ">
                 <UserIcon className="h-5 w-5 " />
-                <li>About</li>
+                <a>About</a>
               </div>
 
-              <div className="navbar">
+              <div onClick={() => router.push("#ordernow")} className=" navbar text-white/80  ">
                 <TruckIcon className="h-5 w-5 " />
-                <li> Order now </li>
+                <li > Order now </li>
               </div>
 
-              <div className="navbar">
+              <div onClick={() => router.push("#products")} className=" navbar text-white/80 ">
                 <Squares2X2Icon className="navBtn h-5 w-6" />
-                <li>Features</li>
+                <li>Products</li>
               </div>
             </ul>
           </div>

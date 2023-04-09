@@ -5,27 +5,33 @@ import Header from "../components/Header";
 import KeyFeatures from "../components/KeyFeatures";
 import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";
-import ContactUs from "../components/ContactUs";
+import OrderNow from "../components/OrderNow"
+// import ContactUs from "../components/ContactUs";
 import Products from "../components/Products";
 const Home: NextPage = () => {
   return (
     <div className=" bg-[#EEEEEE]">
       <Head>
-        <title>Textile</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Dheeraj Enterprises</title>
+                
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2yg1Rc3HSuX8QnxjOSJYjN3TnLCkOeHO4QwZ9OsrmpPhCHgwdgh0mkrN2Cm1JePhavGc&usqp=CAU" />
       </Head>
       <Header />
       <Banner />
 
       <KeyFeatures />
 
-      <Products />
+  <section id="products">
+  <Products />
+  </section>
+      
       <section id="about">
         <AboutUs />
       </section>
 
       <section id="ordernow">
-        <ContactUs />
+        <OrderNow />
+        {/* <ContactUs /> */}
       </section>
 
       <Footer />

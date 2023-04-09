@@ -3,13 +3,13 @@ import React from "react";
 function AboutUs() {
   return (
     <div>
-      <div class="2xl:container 2xl:mx-auto lg:py-8 lg:px-20 md:py-8 mb-40 md:px-6 py-4 px-4">
-        <div class="flex flex-col lg:flex-row justify-between gap-8">
-          <div class="w-full lg:w-5/12 flex flex-col justify-center">
-            <h1 class="text-3xl text-center my-4 lg:text-5xl font-bold leading-9 text-black pb-4">
+      <div className="2xl:container 2xl:mx-auto lg:py-8 lg:px-20 md:py-8 mb-40 md:px-6 py-4 px-4">
+        <div className="flex flex-col lg:flex-row justify-between gap-8">
+          <div className="w-full lg:w-5/12 flex flex-col justify-center">
+            <h1 className="text-3xl text-center my-4 lg:text-5xl font-bold leading-9 text-black pb-4">
               About Us
             </h1>
-            <p class="font-normal text-base leading-6 text-black/80">
+            <p className="font-normal text-base leading-6 text-black/80">
               Welcome to Dheeraj Enterprises your trusted source for
               high-quality rotten rice grains. Our company was founded with a
               mission to provide sustainable agricultural solutions that benefit
@@ -21,9 +21,9 @@ function AboutUs() {
               feed, composting, and other agricultural uses.
             </p>
           </div>
-          <div class="w-full lg:w-8/12">
+          <div className="w-full lg:w-8/12">
             <img
-              class="w-full rounded-lg object-cover h-full"
+              className="w-full rounded-lg object-cover h-full"
               src="/about-us.jpg"
               alt="A group of People"
             />

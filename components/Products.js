@@ -62,27 +62,27 @@ const Products8 = [
 function Products() {
   return (
     <div>
-      <div class="bg-white">
-        <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 class=" flex justify-center flex-row my-10 text-black text-3xl md:text-5xl">
+      <div className="bg-white">
+        <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+          <h2 className=" flex justify-center flex-row my-10 text-black text-3xl md:text-5xl">
             Products
           </h2>
 
-          <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             {Products8.map((product) => (
-              <a href="#" class="group">
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+              <a key={product.id} href="#" className="group">
+                <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
                   <img
                     src={product.src}
                     alt=""
-                    class="h-full w-full object-cover object-center group-hover:opacity-75"
+                    className="h-full w-full object-cover object-center group-hover:opacity-75"
                   />
                 </div>
-                <h3 class="mt-4 text-lg text-black font-semibold ">
+                <h3 className="mt-4 text-lg text-black font-semibold ">
                   {product.name}
                 </h3>
                 <p className="mt-4">{product.desc}</p>
-                <p class="mt-4 text-justify text-sm font-medium text-gray-900">
+                <p className="mt-4 text-justify text-sm font-medium text-gray-900">
                   {product.price}
                 </p>
               </a>

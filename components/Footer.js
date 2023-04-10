@@ -68,8 +68,7 @@ function Footer() {
               </li>
               <li className="mb-4">
                 <a href="#" className="hover:underline truncate">
-                  Wz-30-B, Sant Nagar, <br>
-                  Tilak Nagar New Delhi-110058  </br> 
+                  Wz-30-B, Sant Nagar
                 </a>
               </li>
               <li className="mb-4">
